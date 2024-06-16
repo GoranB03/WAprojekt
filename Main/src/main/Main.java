@@ -92,7 +92,7 @@ public class Main extends JFrame {
         JComboBox<String> genderComboBox = new JComboBox<>(new String[]{"M", "F"});
         JComboBox<String> hairColorComboBox = new JComboBox<>(new String[]{"Black", "Brown", "Blonde", "Red", "White", "Gray", "Blue", "Green", "Purple", "Pink"});
         JComboBox<String> eyeColorComboBox = new JComboBox<>(new String[]{"Brown", "Blue", "Green", "Hazel", "Gray", "Amber", "Black"});
-        JComboBox<String> skinColorComboBox = new JComboBox<>(new String[]{"Light", "Fair", "Medium", "Olive", "Brown", "Dark", "Ebony"});
+        JComboBox<String> skinColorComboBox = new JComboBox<>(new String[]{"Bad", "Good", "Nice", "Romantic", "Evil", "Kindhearted", "Funny"});
 
         JPanel panel = new JPanel(new GridLayout(0, 1));
         panel.add(new JLabel("Name:"));
@@ -103,7 +103,7 @@ public class Main extends JFrame {
         panel.add(hairColorComboBox);
         panel.add(new JLabel("Eye Color:"));
         panel.add(eyeColorComboBox);
-        panel.add(new JLabel("Skin Color:"));
+        panel.add(new JLabel("Personality:"));
         panel.add(skinColorComboBox);
 
         int result = JOptionPane.showConfirmDialog(this, panel, "Unesite podatke o liku", JOptionPane.OK_CANCEL_OPTION);
